@@ -491,10 +491,10 @@ runScript('relocator.js');
 }, 1000);
 }
 
-function goldhen2414(){
-    progress.innerHTML="GoldHEN 2.4b14 loading... please wait";
-    LoadedMSG="GoldHEN 2.4b14 Loaded";
-    PLfile = "goldhen_2.4b14.bin";
+function goldhen(){
+    progress.innerHTML="GoldHEN 2.4b15 loading... please wait";
+    LoadedMSG="GoldHEN 2.4b15 Loaded";
+    PLfile = "goldhen.bin";
     out_jb = "AllPL";
      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
@@ -724,7 +724,7 @@ Tools.style.display = "none";
 <h1 style='text-shadow: 4px 4px 4px black;font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:red;margin-top:1%;'>Manual Exploit 9.00</h1>
 <h1 id=progress style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:white;'>Status</h1>
 <div id=all style="text-align:center;">
-<button id="button-Payload" onMouseOver="progress.innerHTML='GoldHEN v2.4b14 by SISTR0 for PS4 9.00'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="goldhen2414()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:#CEC52A' > GoldHEN v2.4 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GoldHEN v2.4b15 by SISTR0 for PS4 9.00'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="goldhen()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:#CEC52A' > GoldHEN v2.4 </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='GoldHEN v2.3 by SISTR0 for PS4 9.00'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="goldhen23()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:#CEC52A' > GoldHEN v2.3 </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Copy json and shn files from USB to PS4'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_copych()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Cheat Copy </button>
 <br><br>
