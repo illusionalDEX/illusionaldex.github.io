@@ -629,18 +629,6 @@ function load_Orbis(){
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
-function load_Wilde(){
-    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
-    PLfile = "WildeModz-1.47.bin";
-    out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
-}
-
-function load_Queef(){
-    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
-    PLfile = "BeefQueefMod-1.47.bin";
-    out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
-}
-
 function load_ToDexE(){
     progress.innerHTML="ToDEX Enabling... please wait"; LoadedMSG="ToDex Enabled";
     PLfile = "todex-enable.bin";
@@ -691,10 +679,6 @@ function load_copych(){
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
-function allmods(){
-all.style.display = "none";
-gtav.style.display = "block";
-		}
 function alldumpers(){
 all.style.display = "none";
 Dumpers.style.display = "block";
@@ -709,7 +693,6 @@ Tools.style.display = "block";
 		}
 function backall(){
 all.style.display = "block";
-gtav.style.display = "none";
 Linuxs.style.display = "none";
 Dumpers.style.display = "none";
 Tools.style.display = "none";
@@ -751,17 +734,9 @@ Tools.style.display = "none";
 <button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;width: 230px;color:white' class="pointer" onMouseOver="progress.innerHTML='All Linux payloads'"; onmouseout="progress.innerHTML='Status'" onclick="alllinux(); return false"> Linux Group </button>
 <button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;width: 230px;color:white' class="pointer" onMouseOver="progress.innerHTML='All Tools payloads'"; onmouseout="progress.innerHTML='Status'" onclick="alltools(); return false"> Tools Group </button>
 <br><br>
-<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;width: 350px;height: 45px;color:white' class="pointer" onMouseOver="progress.innerHTML='GTAV payloads'"; onmouseout="progress.innerHTML='Status'" onclick="allmods(); return false"> GTAV Group </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Set the desired temperature that the PS4 fan starts'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_fan()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Fan Control </button><select style='font-size:20px;text-align:center;color:black' id="tempC"></select><a style='font-size:17px;text-align:center;color:white;'>&#176;C</a>
 <br>
 </div>
-<div id=gtav style="text-align:center;display:none">
-<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs.innerHTML='back to base menu'"; onmouseout="msgs.innerHTML='9.00'" onclick="backall(); return false"> Back to Menu </button>
-<h1 style='text-shadow: 4px 4px 4px black;font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:red;'>Injecting Payloads Needs Internet</h1>
-<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV WildeModz 1.47'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_Wilde()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > WildeModz 1.47 </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='GTAV BeefQueefMod 1.47'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_Queef()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > BeefQueef 1.47 </button>
-
-<br><br><br></div>
 <div id=Linuxs style="text-align:center;display:none">
 <button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs.innerHTML='back to base menu'"; onmouseout="msgs.innerHTML='9.00'" onclick="backall(); return false"> Back to Menu </button>
 <br><br>
