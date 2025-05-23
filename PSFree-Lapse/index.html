@@ -18,8 +18,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <html>
     <head>
         <meta charset='utf-8'>
-        <title>PSFree-Lapse Exploit For 9.00</title>
+        <title>PSFree-Lapse Exploit For PS4 9.00</title>
         <style>
+			html {
+				background-color: black;
+				color: white;
+			}
             @font-face {
                 font-family: 'logging';
                 src: url('fonts/LiberationMono-Regular.ttf');
@@ -28,15 +32,21 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                 font-family: 'logging';
             }
         </style>
+        <script>
+        if (window.applicationCache.status=='0')
+        {
+          window.location.replace("cache.html");
+        }
+        </script>
     </head>
     <body>
         PSFree: A PS4/PS5 Exploit Chain<br>
         Donation (Monero/XMR):<br>
         86Fk3X9AE94EGKidzRbvyiVgGNYD3qZnuKNq1ZbsomFWXHYm6TtAgz9GNGitPWadkS3Wr9uXoT29U1SfdMtJ7QNKQpW1CVS<br>
-        See <a href='./about.html' data-jslicense='1'>JavaScript license information</a> for the
+        See <a href='./about.html' data-jslicense='1' style='color:red'>JavaScript license information</a> for the
         source code and license.<br>
         <pre id='console'></pre>
     </body>
-    <script src="payload.js"></script>
+    <script src="./payload.js"></script>
     <script type='module' src='./alert.mjs'></script>
 </html>

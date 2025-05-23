@@ -1,123 +1,125 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>DEX's Host For 9.00</title>
+<title>DEX's Host | 9.00</title>
 <style type="text/css">
 body {
-  background-color: #000000;  
-  background-repeat:no-repeat;
-  height:95%;
- }
- button {
-            background:rgba(0,0,0,0.5);
-            border: 1px solid gray;
-            border-radius: 10px;
-            width: 230px;
-            height: 43px;            
-            text-align: center;
-            padding: 6px;
-            margin: 6px;
+	background-color: #000000;  
+	background-repeat: no-repeat;
+	height: 95%;
+}
+button {
+	background: rgba(0,0,0,0.5);
+	border: 1px solid gray;
+	border-radius: 10px;
+	width: 230px;
+	height: 43px;            
+	text-align: center;
+	padding: 6px;
+	margin: 6px;
 }
 button:hover {
-			border: 1px solid red;
-			border-radius: 10px;
+	border: 1px solid red;
+	border-radius: 10px;
 }
- .content {
-  width:35%;
-  height:10%;
-  margin-left:33%;
-  background:rgba(0,0,0,0.5);
-  color:white;
-  font-size:15px;
-  text-align:center;
-  border-radius:30px;
-  line-height:20px;
-  position:absolute;bottom:50px;
- }
-
+.content {
+	width: 35%;
+	height: 10%;
+	margin-left: 33%;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	border-radius: 30px;
+	line-height: 20px;
+	position: absolute;
+	bottom: 50px;
+}
  .red {
-  color:red;
- }
- .hue {
-  color:red;
-  padding:10px;
-  border-radius:10px;
-  animation:hue 5s linear infinite;
-  -webkit-animation: hue 5s linear infinite;
-  box-shadow: 0px 0px 25px red;
- }
- .hue:hover{
-  background:transparent;
- }
- @keyframes hue{
- 0%{
- filter:hue-rotate(0deg);
- -webkit-filter:hue-rotate(0deg);
- }
- 10%{
- box-shadow: 0px 1px 25px red;
- }
- 20%{
- box-shadow: 1px 1px 25px red;
- }
- 30%{
- box-shadow: 1px 0px 25px red;
- }
- 40%{
- box-shadow: 1px -1px 25px red;
- }
- 50%{
- box-shadow: 0px -1px 25px red;
- }
- 60%{
- box-shadow: -1px -1px 25px red;
- }
- 70%{
- box-shadow: -1px 0px 25px red;
- }
- 80%{
- box-shadow: -1px 1px 25px red;
- }
- 90%{
- box-shadow: 0px 1px 25px red;
- }
- 100%{
- filter:hue-rotate(360deg);
- -webkit-filter:hue-rotate(360deg);
- }
- }
- .text {
-  padding-bottom:50px;
- }
-  .back {
-   font-size:25px;
-   margin-top:10px;
-   display:block;
-   line-height:55px;
-   width:20%;
-   text-decoration:none;
-   height:50px;
-   background:white;
-   color:black;
-   border-radius:15px;
+	color:red;
+}
+.hue {
+	color: red;
+	padding: 10px;
+	border-radius: 10px;
+	animation: hue 5s linear infinite;
+	-webkit-animation: hue 5s linear infinite;
+	box-shadow: 0px 0px 25px red;
+}
+.hue:hover {
+	background:transparent;
+}
+@keyframes hue {
+	0% {
+	filter:hue-rotate(0deg);
+	-webkit-filter:hue-rotate(0deg);
+	}
+	10% {
+	box-shadow: 0px 1px 25px red;
+	}
+	20% {
+	box-shadow: 1px 1px 25px red;
+	}
+	30% {
+	box-shadow: 1px 0px 25px red;
+	}
+	40% {
+	box-shadow: 1px -1px 25px red;
+	}
+	50% {
+	box-shadow: 0px -1px 25px red;
+	}
+	60% {
+	box-shadow: -1px -1px 25px red;
+	}
+	70% {
+	box-shadow: -1px 0px 25px red;
+	}
+	80% {
+	box-shadow: -1px 1px 25px red;
+	}
+	90% {
+	box-shadow: 0px 1px 25px red;
+	}
+	100% {
+	filter: hue-rotate(360deg);
+	-webkit-filter: hue-rotate(360deg);
+	}
+}
+.text {
+	padding-bottom: 50px;
+}
+.back {
+	font-size:25px;
+	margin-top:10px;
+	display:block;
+	line-height:55px;
+	width:20%;
+	text-decoration:none;
+	height:50px;
+	background:white;
+	color:black;
+	border-radius:15px;
+}
+.back:hover {
+	border: 2px solid white;
+	background: transparent;
+	box-sizing: border-box;
+	color: white;
   }
-  .back:hover{
-   border:2px solid white;
-   background:transparent;
-   box-sizing:border-box;
-   color:white;
-  }
-  .pointer {cursor: pointer;}
+.pointer {
+	cursor: pointer;
+}
 </style>
 </head>
 <body class="bg-darker">
 <div id="container"  style="color: red">
-<h1 style='font-size:25px;text-align:center;color:red;'>DEX's Host For PS4 9.00</h1>
+<h1 style='font-size:25px;text-align:center;color:red;'>DEX's Host | PS4 9.00</h1>
 <h1 id=msgs2 style='font-size:25px;text-align:center;color:white;'>Status</h1>
 <div style="text-align:center"  id="MyItems">
-<a href="900Manual/index.html"><button style='font-size:21px;text-align:center;color:red' class="pointer" onMouseOver="msgs2.innerHTML='DEXs Manual Exploit For 9.00'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Manual 9.00</B></button></a>
-<a href="900Auto/index.html"><button style='font-size:21px;text-align:center;color:red' class="pointer" onMouseOver="msgs2.innerHTML='DEXs Auto Exploit For 9.00'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Auto 9.00</B></button></a>
-<a href="900PSFree-Lapse/index.html"><button style='font-size:21px;text-align:center;color:red' class="pointer" onMouseOver="msgs2.innerHTML='DEXs PSFree-Lapse Exploit For 9.00'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>PSFree-Lapse 9.00</B></button></a>
+<a href="Manual/index.html"><button style='font-size:21px;text-align:center;color:red' class="pointer" onMouseOver="msgs2.innerHTML='DEXs Manual Exploit | 9.00'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Manual</B></button></a>
+<a href="Auto/index.html"><button style='font-size:21px;text-align:center;color:red' class="pointer" onMouseOver="msgs2.innerHTML='DEXs Auto Exploit | 9.00'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>Auto</B></button></a>
+<a href="PSFree-Lapse/index.html"><button style='font-size:21px;text-align:center;color:red' class="pointer" onMouseOver="msgs2.innerHTML='DEXs PSFree-Lapse Exploit | 9.00'"; onmouseout="msgs2.innerHTML='Status'"  type="button"><B>PSFree-Lapse</B></button></a>
 <div class="content" >
  	<div class="text" >
  	 <br><span style="font-size:20px"<span class="red" >Edited by:</span >&nbsp;&nbsp; <span class="hue" >illusional</span>
