@@ -181,7 +181,7 @@ opacity:0.7;
 
     </style>
 <meta charset="utf-8">
-<title>Manual Exploit 9.00</title>
+<title>Manual Exploit</title>
 		<script>
 			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Page Caching Started!";};
 			window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
@@ -683,20 +683,20 @@ Tools.style.display = "none";
 <script src="webkit.js"></script>
 </head>
 <body style='background-color:#000000'>
-<h1 style='text-shadow: 4px 4px 4px black;font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:red;margin-top:1%;'>Manual Exploit 9.00</h1>
+<h1 style='text-shadow: 4px 4px 4px black;font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:red;margin-top:1%;'>Manual Exploit</h1>
 <h1 id=progress style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:white;'>Status</h1>
 <div id=all style="text-align:center;">
-<button id="button-Payload" onMouseOver="progress.innerHTML='GoldHEN v2.4 by SISTR0 for PS4 9.00'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="goldhen()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:#CEC52A' > GoldHEN v2.4 </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='GoldHEN v2.3 by SISTR0 for PS4 9.00'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="goldhen23()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:#CEC52A' > GoldHEN v2.3 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GoldHEN v2.4 by SISTR0'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="goldhen()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:#CEC52A' > GoldHEN v2.4 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GoldHEN v2.3 by SISTR0'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="goldhen23()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:#CEC52A' > GoldHEN v2.3 </button>
 <br><br>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Binloader Port 9020 for PS4 9.00'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Bloader()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > BinLoader </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Mira loader Port 9021 for PS4 9.00'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Mloader()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > MiraLoader </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Mira Orbis for PS4 9.00'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Mira()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Mira </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Binloader Port 9020'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Bloader()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > BinLoader </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Mira loader Port 9021'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Mloader()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > MiraLoader </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Mira Orbis'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Mira()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Mira </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Copy json and shn files from USB to PS4'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_copych()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Cheat Copy </button>
 <br><br>
-<button id="button-Payload" onMouseOver="progress.innerHTML='WebRTE for PS4 9.00'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_WebRTE()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background-color:blue;color:white' > WebRTE </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='ps4debug for PS4 9.00'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_PS4Debug()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background-color:green;color:white' > Ps4debug </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Orbis Toolbox Loader Alfa 1190 for PS4 9.00'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_Orbis()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background-color:red;color:white' > Orbis Toolbox </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='WebRTE'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_WebRTE()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background-color:blue;color:white' > WebRTE </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='PS4Debug'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_PS4Debug()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background-color:green;color:white' > PS4debug </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Orbis Toolbox Loader Alfa 1190'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_Orbis()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background-color:red;color:white' > Orbis Toolbox </button>
 <a href="web.html"><button  onMouseOver="progress.innerHTML='Web Activator by Sleirsgoevy'"; onmouseout="progress.innerHTML='Status'" type="button" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background-color:#76411D;color:white'> Web Activator </button></a>
 <br><br>
 <button id="button-Payload" onMouseOver="progress.innerHTML='A full access FTP server for the PS4'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_FTP()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > FTP </button>
