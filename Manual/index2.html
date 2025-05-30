@@ -153,7 +153,7 @@ background-size:cover;
 }
 button {
             background:rgba(0,0,0,0.5);
-            border: 1px solid grey;
+            border: 2px solid gray;
             border-radius: 10px;
             width: 173px;
             height: 40px;            
@@ -181,7 +181,7 @@ opacity:0.7;
 
     </style>
 <meta charset="utf-8">
-<title>Manual Exploit</title>
+<title>DEX's Manual Exploit</title>
 		<script>
 			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Page Caching Started!";};
 			window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
@@ -375,8 +375,8 @@ var payload_buffer = chain.syscall(477, 0, 0x300000, 7, 0x1002, -1, 0);
 }
 
 function Linux1N(){
-progress.innerHTML="LinuxLoader 1GB loading... please wait";
-LoadedMSG="LinuxLoader Loaded";
+progress.innerHTML="Linux Loader 1GB loading... please wait";
+LoadedMSG="Linux Loader Loaded";
 out_jb = "Linux";
 PLfile = "payload-900-1gb.bin";
 var script = document.createElement('script');script.src = "MiraLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
@@ -384,8 +384,8 @@ var script = document.createElement('script');script.src = "MiraLoader.js";docum
 }
 
 function Linux2N(){
-progress.innerHTML="LinuxLoader 2GB loading... please wait";
-LoadedMSG="LinuxLoader Loaded";
+progress.innerHTML="Linux Loader 2GB loading... please wait";
+LoadedMSG="Linux Loader Loaded";
 out_jb = "Linux";
 PLfile = "payload-900-2gb.bin";
 var script = document.createElement('script');script.src = "MiraLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
@@ -393,8 +393,8 @@ var script = document.createElement('script');script.src = "MiraLoader.js";docum
 }
 
 function Linux3N(){
-progress.innerHTML="LinuxLoader 3GB loading... please wait";
-LoadedMSG="LinuxLoader Loaded";
+progress.innerHTML="Linux Loader 3GB loading... please wait";
+LoadedMSG="Linux Loader Loaded";
 out_jb = "Linux";
 PLfile = "payload-900-3gb.bin";
 var script = document.createElement('script');script.src = "MiraLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
@@ -402,8 +402,8 @@ var script = document.createElement('script');script.src = "MiraLoader.js";docum
 }
 
 function Linux4N(){
-progress.innerHTML="LinuxLoader 4GB loading... please wait";
-LoadedMSG="LinuxLoader Loaded";
+progress.innerHTML="Linux Loader 4GB loading... please wait";
+LoadedMSG="Linux Loader Loaded";
 out_jb = "Linux";
 PLfile = "payload-900-4gb.bin";
 var script = document.createElement('script');script.src = "MiraLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
@@ -411,8 +411,8 @@ var script = document.createElement('script');script.src = "MiraLoader.js";docum
 }
 
 function Linux5N(){
-progress.innerHTML="LinuxLoader 5GB loading... please wait";
-LoadedMSG="LinuxLoader Loaded";
+progress.innerHTML="Linux Loader 5GB loading... please wait";
+LoadedMSG="Linux Loader Loaded";
 out_jb = "Linux";
 PLfile = "payload-900-5gb.bin";
 var script = document.createElement('script');script.src = "MiraLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
@@ -420,8 +420,8 @@ var script = document.createElement('script');script.src = "MiraLoader.js";docum
 }
 
 function Linux1(){
-progress.innerHTML="LinuxLoader 1GB loading... please wait";
-LoadedMSG="LinuxLoader Loaded";
+progress.innerHTML="Linux Loader 1GB loading... please wait";
+LoadedMSG="Linux Loader Loaded";
 out_jb = "Linux";
 PLfile = "LinuxLoader.bin";
 var script = document.createElement('script');script.src = "MiraLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
@@ -429,8 +429,8 @@ var script = document.createElement('script');script.src = "MiraLoader.js";docum
 }
 
 function Linux2(){
-progress.innerHTML="LinuxLoader 2GB loading... please wait";
-LoadedMSG="LinuxLoader Loaded";
+progress.innerHTML="Linux Loader 2GB loading... please wait";
+LoadedMSG="Linux Loader Loaded";
 out_jb = "Linux";
 PLfile = "LinuxLoader2gb.bin";
 var script = document.createElement('script');script.src = "MiraLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
@@ -438,8 +438,8 @@ var script = document.createElement('script');script.src = "MiraLoader.js";docum
 }
 
 function Linux3(){
-progress.innerHTML="LinuxLoader 3GB loading... please wait";
-LoadedMSG="LinuxLoader Loaded";
+progress.innerHTML="Linux Loader 3GB loading... please wait";
+LoadedMSG="Linux Loader Loaded";
 out_jb = "Linux";
 PLfile = "LinuxLoader3gb.bin";
 var script = document.createElement('script');script.src = "MiraLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
@@ -447,8 +447,8 @@ var script = document.createElement('script');script.src = "MiraLoader.js";docum
 }
 
 function Linux4(){
-progress.innerHTML="LinuxLoader 4GB loading... please wait";
-LoadedMSG="LinuxLoader Loaded";
+progress.innerHTML="Linux Loader 4GB loading... please wait";
+LoadedMSG="Linux Loader Loaded";
 out_jb = "Linux";
 PLfile = "LinuxLoader4gb.bin";
 var script = document.createElement('script');script.src = "MiraLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
@@ -456,8 +456,8 @@ var script = document.createElement('script');script.src = "MiraLoader.js";docum
 }
 
 function Linux5(){
-progress.innerHTML="LinuxLoader 5GB loading... please wait";
-LoadedMSG="LinuxLoader Loaded";
+progress.innerHTML="Linux Loader 5GB loading... please wait";
+LoadedMSG="Linux Loader Loaded";
 out_jb = "Linux";
 PLfile = "LinuxLoader5gb.bin";
 var script = document.createElement('script');script.src = "MiraLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
@@ -680,10 +680,10 @@ Tools.style.display = "none";
 <button id="button-Payload" onMouseOver="progress.innerHTML='GoldHEN v2.4 by SISTR0'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="goldhen()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:#CEC52A' > GoldHEN v2.4 </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='GoldHEN v2.3 by SISTR0'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="goldhen23()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:#CEC52A' > GoldHEN v2.3 </button>
 <br><br>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Binloader Port 9020'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Bloader()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > BinLoader </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Mira loader Port 9021'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Mloader()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > MiraLoader </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Binloader Port 9020'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Bloader()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Bin Loader </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Mira loader Port 9021'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Mloader()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Mira Loader </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Mira Orbis'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Mira()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Mira </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Copy json and shn files from USB to PS4'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_copych()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Cheat Copy </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Copy json and shn files from USB to PS4'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_copych()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Copy Cheats </button>
 <br><br>
 <button id="button-Payload" onMouseOver="progress.innerHTML='WebRTE'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_WebRTE()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background-color:blue;color:white' > WebRTE </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='PS4Debug'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_PS4Debug()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background-color:green;color:white' > PS4debug </button>
@@ -707,17 +707,17 @@ Tools.style.display = "none";
 <div id=Linuxs style="text-align:center;display:none">
 <button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs.innerHTML='back to base menu'"; onmouseout="msgs.innerHTML='9.00'" onclick="backall(); return false"> Back to Menu </button>
 <br><br>
-<button  onMouseOver="progress.innerHTML='LinuxLoader 1gb by PSXITA'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux1N()" style='font-size:18px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux PSXITA 1GB </button>
-<button  onMouseOver="progress.innerHTML='LinuxLoader 2gb by PSXITA'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux2N()" style='font-size:18px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux PSXITA 2GB </button>
-<button  onMouseOver="progress.innerHTML='LinuxLoader 3gb by PSXITA'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux3N()" style='font-size:18px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux PSXITA 3GB </button>
-<button  onMouseOver="progress.innerHTML='LinuxLoader 4gb by PSXITA'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux4N()" style='font-size:18px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux PSXITA 4GB </button>
-<button  onMouseOver="progress.innerHTML='LinuxLoader 5gb by PSXITA'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux5N()" style='font-size:18px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux PSXITA 5GB </button>
+<button  onMouseOver="progress.innerHTML='Linux Loader 1gb by PSXITA'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux1N()" style='font-size:18px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux PSXITA 1GB </button>
+<button  onMouseOver="progress.innerHTML='Linux Loader 2gb by PSXITA'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux2N()" style='font-size:18px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux PSXITA 2GB </button>
+<button  onMouseOver="progress.innerHTML='Linux Loader 3gb by PSXITA'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux3N()" style='font-size:18px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux PSXITA 3GB </button>
+<button  onMouseOver="progress.innerHTML='Linux Loader 4gb by PSXITA'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux4N()" style='font-size:18px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux PSXITA 4GB </button>
+<button  onMouseOver="progress.innerHTML='Linux Loader 5gb by PSXITA'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux5N()" style='font-size:18px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux PSXITA 5GB </button>
 <br><br>
-<button  onMouseOver="progress.innerHTML='LinuxLoader 1gb by Nazky'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux1()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux 1GB </button>
-<button  onMouseOver="progress.innerHTML='LinuxLoader 2gb by Nazky'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux2()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux 2GB </button>
-<button  onMouseOver="progress.innerHTML='LinuxLoader 3gb by Nazky'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux3()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux 3GB </button>
-<button  onMouseOver="progress.innerHTML='LinuxLoader 4gb by Nazky'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux4()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux 4GB </button>
-<button  onMouseOver="progress.innerHTML='LinuxLoader 5gb by Nazky'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux5()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux 5GB </button>
+<button  onMouseOver="progress.innerHTML='Linux Loader 1gb by Nazky'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux1()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux 1GB </button>
+<button  onMouseOver="progress.innerHTML='Linux Loader 2gb by Nazky'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux2()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux 2GB </button>
+<button  onMouseOver="progress.innerHTML='Linux Loader 3gb by Nazky'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux3()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux 3GB </button>
+<button  onMouseOver="progress.innerHTML='Linux Loader 4gb by Nazky'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux4()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux 4GB </button>
+<button  onMouseOver="progress.innerHTML='Linux Loader 5gb by Nazky'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux5()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux 5GB </button>
 </div>
 <div id=Tools style="text-align:center;display:none">
 <button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs.innerHTML='back to base menu'"; onmouseout="msgs.innerHTML='9.00'" onclick="backall(); return false"> Back to Menu </button>
@@ -727,8 +727,8 @@ Tools.style.display = "none";
 <button id="button-Payload" onMouseOver="progress.innerHTML='Disable IDU Mode'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_ExitIDU()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Exit IDU </button>
 <br><br>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Rif Renamer'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_RIFRenamer()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Rif renamer </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='permanentuart'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_permanentuart()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > permanent uart </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='disable aslr'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_DisableASLR()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Disable Aslr </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Permanent UART'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_permanentuart()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Permanent UART </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Disable ASLR'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_DisableASLR()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Disable ASLR </button>
 <br><br><br>
 </div>
 <div id=Dumpers style="text-align:center;display:none">
@@ -741,8 +741,8 @@ Tools.style.display = "none";
 <button id="button-Payload" onMouseOver="progress.innerHTML='Dump Merged Games and Update to a USB drive by Leeful'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_DumperMGU()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > MGU Dumper </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Dump Seperate Games and Update to a USB drive by Leeful'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_DumperSGU()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > SGU Dumper </button>
 <br><br>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Kernel dumper'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_KernelDumper()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Kernel Dumper </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Module dumper'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_ModuleDumper()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Module Dumper </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Kernel Dumper'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_KernelDumper()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Kernel Dumper </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Module Dumper'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_ModuleDumper()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Module Dumper </button>
 <br><br><br>
 </div>
 <div class="content" >
