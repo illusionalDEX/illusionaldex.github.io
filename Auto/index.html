@@ -1,180 +1,131 @@
 <html manifest="Cache.manifest">
 <head>
 <style>
-    html, body{
-margin:auto;
-font-family:sans-serif;
-font-size:20px;
-font-weight:lighter;
-text-align:left;
-color:#FFFFFF;
-background: url("https://i.imgur.com/Ob3TLee.jpeg");
-background-color: black;
-background-size:cover;
+html, body {
+	margin:auto;
+	font-family:sans-serif;
+	font-size:20px;
+	font-weight:lighter;
+	text-align:left;
+	color:#FFFFFF;
+	background:black;
+	background-size:cover;
 }
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+.content {
+	width:50%;
+	height:12.2%;
+	margin-left:25%;
+	font-size:15px;
+	position:absolute;
+	bottom:50px;
 }
- .content {
-  width:50%;
-  height:12.2%;
-  margin-left:25%;
-  font-size:15px;
-  position:absolute;
-  bottom:50px;
- }
- .title {
-  font-size:40px;
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-weight:bolder;
-  margin-bottom:10px;
- }
- .red {
-  color:red;
- }
+.title {
+	font-size:40px;
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-weight:bolder;
+	margin-bottom:10px;
+}
+.red {
+	color:red;
+}
 .hue {
-  color:red;
-  padding:10px;
-  border-radius:10px;
-  animation:hue 5s linear infinite;
-  -webkit-animation: hue 5s linear infinite;
-  box-shadow: 0px 0px 25px red;
- }
-.hue:hover{
-  background:transparent;
- }
- @keyframes hue{
- 0%{
- filter:hue-rotate(0deg);
- -webkit-filter:hue-rotate(0deg);
- }
- 10%{
- box-shadow: 0px 1px 25px red;
- }
- 20%{
- box-shadow: 1px 1px 25px red;
- }
- 30%{
- box-shadow: 1px 0px 25px red;
- }
- 40%{
- box-shadow: 1px -1px 25px red;
- }
- 50%{
- box-shadow: 0px -1px 25px red;
- }
- 60%{
- box-shadow: -1px -1px 25px red;
- }
- 70%{
- box-shadow: -1px 0px 25px red;
- }
- 80%{
- box-shadow: -1px 1px 25px red;
- }
- 90%{
- box-shadow: 0px 1px 25px red;
- }
- 100%{
- filter:hue-rotate(360deg);
- -webkit-filter:hue-rotate(360deg);
- }
- }
- .text {
-  padding-bottom:50px;
- }
-  .back {
-   font-size:25px;
-   margin-top:10px;
-   display:block;
-   line-height:55px;
-   width:20%;
-   text-decoration:none;
-   height:50px;
-   background:white;
-   color:black;
-   border-radius:15px;
-  }
-  .back:hover{
-   border:2px solid white;
-   background:transparent;
-   box-sizing:border-box;
-   color:white;
-  }
- #psip {
-  text-align: center;
-  margin-left: 38%;
-  margin-right: auto;
-  width:15%;
-  display:flex;
-  position: absolute;
-  
-  background: rgba(0, 0, 0, 0.500);
-  border-radius: 2em;
-  border: none;
-  padding: 0.8em;
-  
-  color: #ffffff;
-  padding-left: 1.5em;
-  
-  outline: none;
-  box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px hsl(0, 0%, 2%);
-  backdrop-filter: blur(5px);
+	color:red;
+	padding:10px;
+	border-radius:10px;
+	animation:hue 5s linear infinite;
+	-webkit-animation: hue 5s linear infinite;
+	box-shadow: 0px 0px 25px red;
 }
-/* Modal Content */
-.modal-content {
-  font-family: BFARNAZ;
-  font-size: 18px;
-  position: relative;
-  background-color: #dddddd;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
+.hue:hover {
+	background:transparent;
+}
+@keyframes hue {
+	0% {
+	filter:hue-rotate(0deg);
+	-webkit-filter:hue-rotate(0deg);
+	}
+	10% {
+	box-shadow:0px 1px 25px red;
+	}
+	20% {
+	box-shadow:1px 1px 25px red;
+	}
+	30% {
+	box-shadow:1px 0px 25px red;
+	}
+	40% {
+	box-shadow:1px -1px 25px red;
+	}
+	50% {
+	box-shadow:0px -1px 25px red;
+	}
+	60% {
+	box-shadow:-1px -1px 25px red;
+	}
+	70% {
+	box-shadow:-1px 0px 25px red;
+	}
+	80% {
+	box-shadow:-1px 1px 25px red;
+	}
+	90% {
+	box-shadow:0px 1px 25px red;
+	}
+	100% {
+	filter:hue-rotate(360deg);
+	-webkit-filter:hue-rotate(360deg);
+	}
+}
+.text {
+	padding-bottom:50px;
+}
+.back {
+	font-size:25px;
+	margin-top:10px;
+	display:block;
+	line-height:55px;
+	width:20%;
+	text-decoration:none;
+	height:50px;
+	background:white;
+	color:black;
+	border-radius:15px;
+}
+.back:hover{
+	border:2px solid white;
+	background:transparent;
+	box-sizing:border-box;
+	color:white;
 }
 button {
-            background:rgba(0,0,0,0.5);
-            border: 2px solid gray;
-            border-radius: 10px;
-            width: 173px;
-            height: 40px;            
-            text-align: center;
+	background:rgba(0, 0, 0, 0.5);
+	border:2px solid gray;
+	border-radius:10px;
+	width:173px;
+	height:40px;            
+	text-align:center;
 }
 button:hover {
-			border: 2px solid red;
-			border-radius: 10px;
+	border:2px solid red;
+	border-radius:10px;
 }
 
 hr {
-padding:0;
-margin:0;
-opacity:0.7;
+	padding:0;
+	margin:0;
+	opacity:0.7;
 }
 
 #progress {
- font-weight:bold;
- text-shadow: 4px 4px 4px black;
-
- font-size:17px;
+	font-weight:bold;
+	text-shadow:4px 4px 4px black;
+	font-size:17px;
 }
-.pointer {cursor: pointer;}
+.pointer {
+	cursor:pointer;
+}
 
 
     </style>
@@ -185,7 +136,7 @@ opacity:0.7;
 			window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
 			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Page Cached Successfully!";setTimeout(function(){document.getElementById("progress").innerHTML="Re-Open Page!"; }, 1500);localStorage.cachedNA="yes";};
 			window.applicationCache.onnoupdate=function(){localStorage.cachedNA="yes";};
-                        window.applicationCache.onerror=function(){localStorage.cachedNA="yes";};
+            window.applicationCache.onerror=function(){localStorage.cachedNA="yes";};
 		</script>
 <script>
 function load_poc(){
@@ -573,7 +524,7 @@ Tools.style.display = "none";
 		}
 </script>
 </head>
-<body onload="if(localStorage.cachedNA=='yes')setTimeout(poc,50);" style='background-color:#000000'>
+<body onload="if(localStorage.cachedNA=='yes')setTimeout(poc,50);">
 <h1 style='text-shadow: 4px 4px 4px black;font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:red;margin-top:1%;'>Auto Exploit</h1>
 <h1 id=progress style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:white;'>Jailbreaking... Please Wait!</h1>
 <div id=all style="text-align:center;display:none">
