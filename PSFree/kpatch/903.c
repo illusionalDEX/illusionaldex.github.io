@@ -15,7 +15,7 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
-// 9.00
+// 9.03, 9.04
 
 #include <stddef.h>
 
@@ -106,8 +106,8 @@ void do_patch(void) {
     // GPU X: 0x8 R: 0x10 W: 0x20
     // that's why you see other bits set
     // ref: https://cturt.github.io/ps4-2.html
-    write8(kbase, 0x16632a, 0x37);
-    write8(kbase, 0x16632d, 0x37);
+    write8(kbase, 0x1662da, 0x37);
+    write8(kbase, 0x1662dd, 0x37);
 
     // patch vm_map_protect() (called by sys_mprotect()) to allow rwx mappings
     //
@@ -125,7 +125,7 @@ void do_patch(void) {
     // mov     r14, qword [rbp - 0xad0]
     // cmp     eax, 0x4000000
     // jb      ... ; patch jb to jmp
-    write8(kbase, 0x23b67f, 0xeb);
+    write8(kbase, 0x23b34f, 0xeb);
     // patch called function to always return 0
     //
     // sys_dynlib_dlsym:
@@ -140,7 +140,7 @@ void do_patch(void) {
     //     push    rbp
     //     mov     rbp, rsp
     //     ...
-    write32(kbase, 0x221b40, 0xc3c03148);
+    write32(kbase, 0x221810, 0xc3c03148);
 
     // patch sys_setuid() to allow freely changing the effective user ID
 
@@ -166,11 +166,11 @@ void do_patch(void) {
     // }
 
     // sysent[11]
-    const size_t offset_sysent_11 = 0x1100520;
+    const size_t offset_sysent_11 = 0x10fc520;
     // .sy_narg = 6
     write32(kbase, offset_sysent_11, 6);
     // .sy_call = gadgets['jmp qword ptr [rsi]']
-    write64(kbase, offset_sysent_11 + 8, kbase + 0x4c7ad);
+    write64(kbase, offset_sysent_11 + 8, kbase + 0x5325b);
     // .sy_thrcnt = SY_THR_STATIC
     write32(kbase, offset_sysent_11 + 0x2c, 1);
 

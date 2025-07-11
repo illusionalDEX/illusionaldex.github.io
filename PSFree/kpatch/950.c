@@ -15,7 +15,7 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
-// 9.00
+// 9.50, 9.51, 9.60
 
 #include <stddef.h>
 
@@ -106,8 +106,8 @@ void do_patch(void) {
     // GPU X: 0x8 R: 0x10 W: 0x20
     // that's why you see other bits set
     // ref: https://cturt.github.io/ps4-2.html
-    write8(kbase, 0x16632a, 0x37);
-    write8(kbase, 0x16632d, 0x37);
+    write8(kbase, 0x122d7a, 0x37);
+    write8(kbase, 0x122d7d, 0x37);
 
     // patch vm_map_protect() (called by sys_mprotect()) to allow rwx mappings
     //
@@ -117,7 +117,7 @@ void do_patch(void) {
     //     vm_map_unlock(map);
     //     return (KERN_PROTECTION_FAILURE);
     // }
-    write32(kbase, 0x80b8d, 0);
+    write32(kbase, 0x196d3d, 0);
 
     // patch sys_dynlib_dlsym() to allow dynamic symbol resolution everywhere
 
@@ -125,7 +125,7 @@ void do_patch(void) {
     // mov     r14, qword [rbp - 0xad0]
     // cmp     eax, 0x4000000
     // jb      ... ; patch jb to jmp
-    write8(kbase, 0x23b67f, 0xeb);
+    write8(kbase, 0x19fedf, 0xeb);
     // patch called function to always return 0
     //
     // sys_dynlib_dlsym:
@@ -140,7 +140,7 @@ void do_patch(void) {
     //     push    rbp
     //     mov     rbp, rsp
     //     ...
-    write32(kbase, 0x221b40, 0xc3c03148);
+    write32(kbase, 0x11960, 0xc3c03148);
 
     // patch sys_setuid() to allow freely changing the effective user ID
 
@@ -148,7 +148,7 @@ void do_patch(void) {
     // call priv_check_cred(oldcred, PRIV_CRED_SETUID, 0)
     // test eax, eax
     // je ... ; patch je to jmp
-    write8(kbase, 0x1a06, 0xeb);
+    write8(kbase, 0x1fa536, 0xeb);
 
     // overwrite the entry of syscall 11 (unimplemented) in sysent
     //
@@ -166,11 +166,11 @@ void do_patch(void) {
     // }
 
     // sysent[11]
-    const size_t offset_sysent_11 = 0x1100520;
+    const size_t offset_sysent_11 = 0x10f9500;
     // .sy_narg = 6
     write32(kbase, offset_sysent_11, 6);
     // .sy_call = gadgets['jmp qword ptr [rsi]']
-    write64(kbase, offset_sysent_11 + 8, kbase + 0x4c7ad);
+    write64(kbase, offset_sysent_11 + 8, kbase + 0x15a6d);
     // .sy_thrcnt = SY_THR_STATIC
     write32(kbase, offset_sysent_11 + 0x2c, 1);
 
