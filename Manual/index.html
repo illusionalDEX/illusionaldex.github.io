@@ -109,7 +109,7 @@ button {
 	text-align:center;
 }
 button:hover {
-	border: 1px solid red;
+	border: 2px solid red;
 	border-radius: 10px;
 }
 #progress {
@@ -423,6 +423,14 @@ runScript('relocator.js');
 }, 1000);
 }
 
+function hen(){
+    progress.innerHTML="HEN loading... please wait";
+    LoadedMSG="HEN Loaded";
+    PLfile = "hen.bin";
+    out_jb = "AllPL";
+     if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
+}
+
 function goldhen(){
     progress.innerHTML="GoldHEN 2.4 loading... please wait";
     LoadedMSG="GoldHEN 2.4 Loaded";
@@ -623,6 +631,7 @@ Tools.style.display = "none";
 <div id=all style="text-align:center;">
 <button id="button-Payload" onMouseOver="progress.innerHTML='GoldHEN v2.4 by SISTR0'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="goldhen()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:#CEC52A' > GoldHEN v2.4 </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='GoldHEN v2.3 by SISTR0'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="goldhen23()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:#CEC52A' > GoldHEN v2.3 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='HEN'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="hen()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:#CEC52A' > HEN </button>
 <br><br>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Bin loader Port 9020'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Bloader()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Bin Loader </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Mira loader Port 9021'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Mloader()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Mira Loader </button>
