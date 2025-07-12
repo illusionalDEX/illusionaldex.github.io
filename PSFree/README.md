@@ -1,27 +1,45 @@
-# PSFree version 1.5.0
+# PSFree
+PSFree is a unstable and work in progress jailbreak multi firmware website for the PlayStation 4 and the PlayStation 5.
 
-Lapse Kex ported to 9.00 - Still WIP
-
-Very fast and reliable but can KP :P
-
-Warning: This repository is a work in progress. Do not use it by default—or better yet, don’t use it at all—until I and/or someone else declare it stable. There are issues with certain games, such as black screens, problems with save data, and multiple kernel panics. The offsets for PS4 9.00 still need to be verified. If you choose to use it, do so at your own risk.
-
-TODO:
-- Fix game issues. Black screen. Saves. No boot
+This repo is based on the work of two other repo :
+- [PSFree from Kame repo](https://github.com/kmeps4/PSFree) 
+- [PSFree from Al-Azif repo](https://github.com/Al-Azif/psfree-lapse)
   
-PR are welcome 
+___
 
-PSFree is a collection of exploits for the PS4 console. The main focus of the 
-repo is for the PS4 but we try to make things portable to PS5.
+### Know issues
+- Black screen on certain game.
+- Save corruption on certain game.
+- PS4 crash.
+- Some payloads not working correctly.
 
-* Exploits
-  * PSFree: src/psfree.mjs
-  * Lapse (kernel): src/scripts/lapse.mjs
+### Currently working firmware
 
-# COPYRIGHT AND AUTHORS:
-AGPL-3.0-or-later (see src/COPYING). This repo belongs to the group
-`anonymous`. We refer to anonymous contributors as "anonymous" as well.
-# CREDITS:
-* anonymous for PS4 firmware kernel dumps
-* Check the appropriate files for any **extra** contributors. Unless otherwise
-  stated, everything here can also be credited to us.
+This repo only support PS4 for now.
+
+
+| Console | Firmware |
+|:------ |:----------|
+| PS4 | 7.00 - 9.60 |
+
+
+# How to run
+
+## Website
+[Click Here](https://nazky.github.io/PSFree/)
+
+## Locally
+
+You need python !
+
+### Python
+##### Linux:
+Just start the 'start_server.sh'.
+
+###### Command:
+```bash
+sudo chmod start_server.sh
+./start_server.sh
+```
+##### Windows:
+Just start (double-click) the start_server.bat.
