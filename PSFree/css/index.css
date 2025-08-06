@@ -140,7 +140,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: black;
-    color: white;
+	color: white;
     border: 1px solid #ccc;
     padding: 20px;
     z-index: 1001;
@@ -492,7 +492,7 @@ body {
     border: 8px solid #ccc;
     border-top-color: #333;
     border-radius: 50%;
-    animation: spin 1s linear infinite;
+    animation: spin 0.8s linear infinite;
 }
 
 @keyframes spin {
