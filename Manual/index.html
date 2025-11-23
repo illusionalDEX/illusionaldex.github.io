@@ -157,9 +157,6 @@ if (out_jb == "AllPL")  {
 else if (out_jb == "JB")  {
 allset();
 }
-else if (out_jb == "Linux")  {
-load_poc2();
-}
 else if (out_jb == "BinLD") {
     var payload_buffer = chain.syscall(477, 0x0, 0x300000, 0x7, 0x1000, 0xFFFFFFFF, 0);
     var payload_loader = p.malloc32(0x1000);
@@ -318,115 +315,25 @@ var payload_buffer = chain.syscall(477, 0, 0x300000, 7, 0x1002, -1, 0);
             setTimeout(load_poc,2000);
 }
 
-function Linux1N(){
-progress.innerHTML="Linux Loader 1GB loading... please wait";
-LoadedMSG="Linux Loader Loaded";
-out_jb = "Linux";
-PLfile = "payload-900-1gb.bin";
-var script = document.createElement('script');script.src = "MiraLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
- if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
-}
-
-function Linux2N(){
-progress.innerHTML="Linux Loader 2GB loading... please wait";
-LoadedMSG="Linux Loader Loaded";
-out_jb = "Linux";
-PLfile = "payload-900-2gb.bin";
-var script = document.createElement('script');script.src = "MiraLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
- if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
-}
-
-function Linux3N(){
-progress.innerHTML="Linux Loader 3GB loading... please wait";
-LoadedMSG="Linux Loader Loaded";
-out_jb = "Linux";
-PLfile = "payload-900-3gb.bin";
-var script = document.createElement('script');script.src = "MiraLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
- if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
-}
-
-function Linux4N(){
-progress.innerHTML="Linux Loader 4GB loading... please wait";
-LoadedMSG="Linux Loader Loaded";
-out_jb = "Linux";
-PLfile = "payload-900-4gb.bin";
-var script = document.createElement('script');script.src = "MiraLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
- if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
-}
-
-function Linux5N(){
-progress.innerHTML="Linux Loader 5GB loading... please wait";
-LoadedMSG="Linux Loader Loaded";
-out_jb = "Linux";
-PLfile = "payload-900-5gb.bin";
-var script = document.createElement('script');script.src = "MiraLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
- if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
-}
-
-function Linux1(){
-progress.innerHTML="Linux Loader 1GB loading... please wait";
-LoadedMSG="Linux Loader Loaded";
-out_jb = "Linux";
-PLfile = "LinuxLoader.bin";
-var script = document.createElement('script');script.src = "MiraLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
- if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
-}
-
-function Linux2(){
-progress.innerHTML="Linux Loader 2GB loading... please wait";
-LoadedMSG="Linux Loader Loaded";
-out_jb = "Linux";
-PLfile = "LinuxLoader2gb.bin";
-var script = document.createElement('script');script.src = "MiraLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
- if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
-}
-
-function Linux3(){
-progress.innerHTML="Linux Loader 3GB loading... please wait";
-LoadedMSG="Linux Loader Loaded";
-out_jb = "Linux";
-PLfile = "LinuxLoader3gb.bin";
-var script = document.createElement('script');script.src = "MiraLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
- if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
-}
-
-function Linux4(){
-progress.innerHTML="Linux Loader 4GB loading... please wait";
-LoadedMSG="Linux Loader Loaded";
-out_jb = "Linux";
-PLfile = "LinuxLoader4gb.bin";
-var script = document.createElement('script');script.src = "MiraLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
- if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
-}
-
-function Linux5(){
-progress.innerHTML="Linux Loader 5GB loading... please wait";
-LoadedMSG="Linux Loader Loaded";
-out_jb = "Linux";
-PLfile = "LinuxLoader5gb.bin";
-var script = document.createElement('script');script.src = "MiraLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
- if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
-}
-
 function Mira(){
 progress.innerHTML="Mira loading... please wait";
 LoadedMSG="Mira Loaded";
 setTimeout(function(){
-runScript('netcat.js');
-runScript('malloc.js');
-runScript('ropb2.js');
-runScript('syscalls.js');
-runScript('syscalls2.js');
-runScript('mira2.js');
-runScript('mira.js');
-runScript('relocator.js');
+runScript('./js/netcat.js');
+runScript('./js/malloc.js');
+runScript('./js/ropb2.js');
+runScript('./js/syscalls.js');
+runScript('./js/syscalls2.js');
+runScript('./js/mira2.js');
+runScript('./js/mira.js');
+runScript('./js/relocator.js');
 }, 1000);
 }
 
 function hen(){
     progress.innerHTML="HEN loading... please wait";
     LoadedMSG="HEN Loaded";
-    PLfile = "hen.bin";
+    PLfile = "./Payloads/hen.bin";
     out_jb = "AllPL";
      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
@@ -434,7 +341,7 @@ function hen(){
 function goldhen(){
     progress.innerHTML="GoldHEN 2.4 loading... please wait";
     LoadedMSG="GoldHEN 2.4 Loaded";
-    PLfile = "goldhen.bin";
+    PLfile = "./Payloads/goldhen.bin";
     out_jb = "AllPL";
      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
@@ -442,149 +349,149 @@ function goldhen(){
 function goldhen23(){
     progress.innerHTML="GoldHEN 2.3 loading... please wait";
     LoadedMSG="GoldHEN 2.3 Loaded";
-    PLfile = "goldhen_2.3.bin";
+    PLfile = "./Payloads/goldhen_2.3.bin";
     out_jb = "AllPL";
      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
 function load_PS4Debug(){
     progress.innerHTML="PS4Debug loading... please wait"; LoadedMSG="PS4Debug Loaded";
-    PLfile = "ps4debug.bin";
+    PLfile = "./Payloads/ps4debug.bin";
     out_jb = "AllPL";
      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
 function load_permanentuart(){
     progress.innerHTML="permanentuart loading... please wait"; LoadedMSG="permanentuart Loaded";
-    PLfile = "permanentuart.bin";
+    PLfile = "./Payloads/permanentuart.bin";
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
 function load_App2USB(){
     progress.innerHTML="app2usb loading... please wait"; LoadedMSG="app2usb Loaded";
-    PLfile = "app2usb.bin";
+    PLfile = "./Payloads/app2usb.bin";
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
 function load_BackupDB(){
     progress.innerHTML="backupdb loading... please wait"; LoadedMSG="backupdb Loaded";
-    PLfile = "backupdb.bin";
+    PLfile = "./Payloads/backupdb.bin";
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
 function load_pkgb(){
     progress.innerHTML="backupdb loading... please wait"; LoadedMSG="backupdb Loaded";
-    PLfile = "pkg-backup.bin";
+    PLfile = "./Payloads/pkg-backup.bin";
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
 function load_DumperG(){
     progress.innerHTML="Game Dumper loading... please wait"; LoadedMSG="Game Dumper Loaded";
-    PLfile = "DumperG.bin";
+    PLfile = "./Payloads/DumperG.bin";
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
 function load_DumperU(){
     progress.innerHTML="Game Update Dumper loading... please wait"; LoadedMSG="Game Update Dumper Loaded";
-    PLfile = "DumperU.bin";
+    PLfile = "./Payloads/DumperU.bin";
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
 function load_DumperMGU(){
     progress.innerHTML="Merged Game and Update Dumper loading... please wait"; LoadedMSG="Merged Game and Update Dumper Loaded";
-    PLfile = "DumperMGU.bin";
+    PLfile = "./Payloads/DumperMGU.bin";
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
 function load_DumperSGU(){
     progress.innerHTML="Seperate Games and Update Dumper loading... please wait"; LoadedMSG="Seperate Games and Update Dumper Loaded";
-    PLfile = "DumperSGU.bin";
+    PLfile = "./Payloads/DumperSGU.bin";
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
 function load_KernelDumper(){
     progress.innerHTML="kernel Dumper loading... please wait"; LoadedMSG="Kernel Dumper Loaded";
-    PLfile = "kerneldumper.bin";
+    PLfile = "./Payloads/kerneldumper.bin";
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
 function load_ModuleDumper(){
     progress.innerHTML="Module Dumper loading... please wait"; LoadedMSG="Module Dumper Loaded";
-    PLfile = "mdumper.bin";
+    PLfile = "./Payloads/mdumper.bin";
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
 function load_RestoreDB(){
     progress.innerHTML="RestoreDB loading... please wait"; LoadedMSG="RestoreDB Loaded";
-    PLfile = "restoredb.bin";
+    PLfile = "./Payloads/restoredb.bin";
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
 function load_DisableASLR(){
     progress.innerHTML="DisableASLR loading... please wait"; LoadedMSG="DisableASLR Loaded";
-    PLfile = "disableaslr.bin";
+    PLfile = "./Payloads/disableaslr.bin";
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
 function load_DisableUpdates(){
     progress.innerHTML="DisableUpdates loading... please wait"; LoadedMSG="DisableUpdates Loaded";
-    PLfile = "disableupdates.bin";
+    PLfile = "./Payloads/disableupdates.bin";
     out_jb = "AllPL";
      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
 function load_EnableUpdates(){
     progress.innerHTML="EnableUpdates loading... please wait"; LoadedMSG="EnableUpdates Loaded";
-    PLfile = "enableupdates.bin";
+    PLfile = "./Payloads/enableupdates.bin";
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
 function load_EnableBrowser(){
     progress.innerHTML="EnableBrowser loading... please wait"; LoadedMSG="EnableBrowser Loaded";
-    PLfile = "enablebrowser.bin";
+    PLfile = "./Payloads/enablebrowser.bin";
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
 function load_ExitIDU(){
     progress.innerHTML="ExitIDU loading... please wait"; LoadedMSG="ExitIDU Loaded";
-    PLfile = "exitidu.bin";
+    PLfile = "./Payloads/exitidu.bin";
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
   
 function load_FTP(){
     progress.innerHTML="FTP loading... please wait"; LoadedMSG="FTP Loaded";
-    PLfile = "ftp.bin";
+    PLfile = "./Payloads/ftp.bin";
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
   
 function load_RIFRenamer(){
     progress.innerHTML="RIFRenamer loading... please wait"; LoadedMSG="RIFRenamer Loaded";
-    PLfile = "rifrenamer.bin";
+    PLfile = "./Payloads/rifrenamer.bin";
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
   
 function load_Orbis(){
     progress.innerHTML="Orbis-Toolbox loading... please wait"; LoadedMSG="Orbis-Toolbox Loaded";
-    PLfile = "Orbis-Toolbox-900.bin";
+    PLfile = "./Payloads/Orbis-Toolbox-900.bin";
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
 function load_WebRTE(){
     progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
-    PLfile = "WebRTE.bin";
+    PLfile = "./Payloads/WebRTE.bin";
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
 function load_fan(){
     progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
-    PLfile = "fan" +tempC.value+ ".bin";
+    PLfile = "./Payloads/fan" +tempC.value+ ".bin";
     out_jb = "AllPL";
      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
 function Mloader(){
     progress.innerHTML="MiraLoader loading... please wait"; LoadedMSG="Loader Loaded. Send payloads to port 9021";
-    PLfile = "MiraLoader.bin";
+    PLfile = "./Payloads/MiraLoader.bin";
     out_jb = "AllPL";
      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
@@ -597,7 +504,7 @@ function Bloader(){
 
 function load_copych(){
     progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
-    PLfile = "CopyCH.bin";
+    PLfile = "./Payloads/CopyCH.bin";
     out_jb = "AllPL";      if(sessionStorage.Exploit!="yes"){setTimeout(poc, 500);} else {LoaderPL();}
 }
 
@@ -605,25 +512,20 @@ function alldumpers(){
 all.style.display = "none";
 Dumpers.style.display = "block";
 		}
-function alllinux(){
-all.style.display = "none";
-Linuxs.style.display = "block";
-		}
 function alltools(){
 all.style.display = "none";
 Tools.style.display = "block";
 		}
 function backall(){
 all.style.display = "block";
-Linuxs.style.display = "none";
 Dumpers.style.display = "none";
 Tools.style.display = "none";
 		}
 </script>
-<script src="int64.js"></script>
-<script src="rop.js"></script>
-<script src="kexploit.js"></script>
-<script src="webkit.js"></script>
+<script src="./js/int64.js"></script>
+<script src="./js/rop.js"></script>
+<script src="./js/kexploit.js"></script>
+<script src="./js/webkit.js"></script>
 </head>
 <body>
 <h1 style='text-shadow: 4px 4px 4px black;font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:red;margin-top:1%;'>Manual Exploit</h1>
@@ -651,26 +553,10 @@ Tools.style.display = "none";
 <button id="button-Payload" onMouseOver="progress.innerHTML='Enable Browser'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_EnableBrowser()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Enable Browser </button>
 <br><br>
 <button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;width: 230px;color:white' class="pointer" onMouseOver="progress.innerHTML='All Dumper payloads'"; onmouseout="progress.innerHTML='Status'" onclick="alldumpers(); return false"> Dumper Group </button>
-<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;width: 230px;color:white' class="pointer" onMouseOver="progress.innerHTML='All Linux payloads'"; onmouseout="progress.innerHTML='Status'" onclick="alllinux(); return false"> Linux Group </button>
 <button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;width: 230px;color:white' class="pointer" onMouseOver="progress.innerHTML='All Tools payloads'"; onmouseout="progress.innerHTML='Status'" onclick="alltools(); return false"> Tools Group </button>
 <br><br>
 <button id="button-Payload" onMouseOver="progress.innerHTML='Set the desired temperature that the PS4 fan starts'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_fan()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' > Fan Control </button><select style='font-size:20px;text-align:center;color:black' id="tempC"></select><a style='font-size:17px;text-align:center;color:white;'>&#176;C</a>
 <br>
-</div>
-<div id=Linuxs style="text-align:center;display:none">
-<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs.innerHTML='back to base menu'"; onmouseout="msgs.innerHTML='9.00'" onclick="backall(); return false"> Back to Menu </button>
-<br><br>
-<button  onMouseOver="progress.innerHTML='Linux Loader 1gb by PSXITA'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux1N()" style='font-size:18px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux PSXITA 1GB </button>
-<button  onMouseOver="progress.innerHTML='Linux Loader 2gb by PSXITA'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux2N()" style='font-size:18px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux PSXITA 2GB </button>
-<button  onMouseOver="progress.innerHTML='Linux Loader 3gb by PSXITA'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux3N()" style='font-size:18px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux PSXITA 3GB </button>
-<button  onMouseOver="progress.innerHTML='Linux Loader 4gb by PSXITA'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux4N()" style='font-size:18px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux PSXITA 4GB </button>
-<button  onMouseOver="progress.innerHTML='Linux Loader 5gb by PSXITA'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux5N()" style='font-size:18px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux PSXITA 5GB </button>
-<br><br>
-<button  onMouseOver="progress.innerHTML='Linux Loader 1gb by Nazky'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux1()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux 1GB </button>
-<button  onMouseOver="progress.innerHTML='Linux Loader 2gb by Nazky'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux2()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux 2GB </button>
-<button  onMouseOver="progress.innerHTML='Linux Loader 3gb by Nazky'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux3()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux 3GB </button>
-<button  onMouseOver="progress.innerHTML='Linux Loader 4gb by Nazky'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux4()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux 4GB </button>
-<button  onMouseOver="progress.innerHTML='Linux Loader 5gb by Nazky'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Linux5()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white'> Linux 5GB </button>
 </div>
 <div id=Tools style="text-align:center;display:none">
 <button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;color:white' class="pointer" onMouseOver="msgs.innerHTML='back to base menu'"; onmouseout="msgs.innerHTML='9.00'" onclick="backall(); return false"> Back to Menu </button>
